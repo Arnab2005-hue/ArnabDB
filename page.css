@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lobster&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Outfit:wght@100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    text-transform: capitalize;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: #fbfbfb;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    opacity: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f8f8f8;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+ul{
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+}
+ul li a{
+    text-decoration: none;
+    color: #000000;
+}
+.menu{
+    background-color: #fbfbfb;
+    padding: 1rem 1.4rem ;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+button img{
+    width: 20px;
+    height: 20px;
+}
+.btn{
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: row;
+}  
+.btn button{
+    border: none;
+    cursor: pointer;
+    padding: .8rem .8rem;   
+    border-radius: 30px; 
+    text-align: center;
+}
+.btn button a{
+    text-decoration: none;
+    color: black;
+}
+.btn button:hover{
+    border: orange 1px solid;
+}
+
+/* main */
+/* home */
+
+.home{
+    height: 30rem;
+    background-image: url(assets/cover-pic.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.home .description{
+    display: flex;
+    flex-direction: column;
+    padding-left: 2.5rem;
+    position: relative;
+    top: 10rem;
+}
+.more{
+    position: relative;
+    top: 12rem;
+    padding: 1rem;
+    margin-left: 2.5rem;
+    border-radius: 5rem;
+    border: none;
+    outline: none;
+    background-color: #000;
+}
+.more a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+}
+
+/* about */
+.about{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+.about img{
+    height: 250px;
+    width: 250px;
+    margin-left: 2rem;
+}
+.about .editor{
+    position: relative;
+    top: 2.5rem;
+    padding-right: 2rem; 
+}
+/* topic */
+.topic{
+    display: grid;
+    grid-template-columns: 50rem auto;
+}
+.left p ,.right p{
+    padding: 1rem 2rem;
+}
+.left h2 ,.right h2{
+    padding: 2rem 1rem 0 ;
+}
+.left p{
+    align-items: center;
+}
